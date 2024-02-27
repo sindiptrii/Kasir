@@ -1,0 +1,171 @@
+CRITICAL - 2024-02-27 04:40:33 --> ErrorException: Undefined array key "htpp"
+in SYSTEMPATH\HTTP\URI.php on line 371.
+ 1 SYSTEMPATH\HTTP\URI.php(371): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "htpp"', 'C:\\xampppp\\htdocs\\appKasir\\vendor\\codeigniter4\\framework\\system\\HTTP\\URI.php', 371)
+ 2 SYSTEMPATH\HTTP\URI.php(635): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(111): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 5 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 8 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+10 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+11 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+12 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+13 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-02-27 04:40:33 --> ErrorException: Uncaught ErrorException: Undefined array key "htpp" in C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\URI.php:371
+Stack trace:
+#0 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\URI.php(371): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampppp\\htdo...', 371)
+#1 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\URI.php(635): CodeIgniter\HTTP\URI->getAuthority()
+#2 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(111): CodeIgniter\HTTP\URI->__toString()
+#3 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#4 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#5 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#6 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#7 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#8 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#9 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#10 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#11 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#12 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#13 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#14 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#15 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#16 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#17 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Debug\Exceptions.php(150): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#18 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#19 {main}
+  thrown
+【Previous Exception】
+ErrorException
+Undefined array key "htpp"
+#0 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\URI.php(371): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampppp\\htdo...', 371)
+#1 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\URI.php(635): CodeIgniter\HTTP\URI->getAuthority()
+#2 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(111): CodeIgniter\HTTP\URI->__toString()
+#3 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#4 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#5 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#6 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#7 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#8 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#9 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#10 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#11 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#12 C:\xampppp\htdocs\appKasir\spark(102): CodeIgniter\CLI\Console->run()
+#13 {main}
+in SYSTEMPATH\HTTP\URI.php on line 371.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-27 04:45:17 --> ErrorException: Undefined array key "htpp"
+in SYSTEMPATH\HTTP\URI.php on line 371.
+ 1 SYSTEMPATH\HTTP\URI.php(371): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "htpp"', 'C:\\xampppp\\htdocs\\appKasir\\vendor\\codeigniter4\\framework\\system\\HTTP\\URI.php', 371)
+ 2 SYSTEMPATH\HTTP\URI.php(635): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(111): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 5 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 8 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+10 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+11 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+12 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+13 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-02-27 04:45:17 --> ErrorException: Uncaught ErrorException: Undefined array key "htpp" in C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\URI.php:371
+Stack trace:
+#0 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\URI.php(371): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampppp\\htdo...', 371)
+#1 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\URI.php(635): CodeIgniter\HTTP\URI->getAuthority()
+#2 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(111): CodeIgniter\HTTP\URI->__toString()
+#3 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#4 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#5 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#6 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#7 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#8 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#9 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#10 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#11 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#12 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#13 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#14 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#15 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#16 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#17 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Debug\Exceptions.php(150): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#18 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#19 {main}
+  thrown
+【Previous Exception】
+ErrorException
+Undefined array key "htpp"
+#0 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\URI.php(371): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampppp\\htdo...', 371)
+#1 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\URI.php(635): CodeIgniter\HTTP\URI->getAuthority()
+#2 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(111): CodeIgniter\HTTP\URI->__toString()
+#3 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#4 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#5 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#6 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#7 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#8 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#9 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#10 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#11 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#12 C:\xampppp\htdocs\appKasir\spark(102): CodeIgniter\CLI\Console->run()
+#13 {main}
+in SYSTEMPATH\HTTP\URI.php on line 371.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-02-27 04:46:04 --> ErrorException: Undefined array key "htpp"
+in SYSTEMPATH\HTTP\URI.php on line 371.
+ 1 SYSTEMPATH\HTTP\URI.php(371): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "htpp"', 'C:\\xampppp\\htdocs\\appKasir\\vendor\\codeigniter4\\framework\\system\\HTTP\\URI.php', 371)
+ 2 SYSTEMPATH\HTTP\URI.php(635): CodeIgniter\HTTP\URI->getAuthority()
+ 3 SYSTEMPATH\HTTP\SiteURI.php(111): CodeIgniter\HTTP\URI->__toString()
+ 4 SYSTEMPATH\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+ 5 SYSTEMPATH\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 8 SYSTEMPATH\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+10 SYSTEMPATH\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+11 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+12 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+13 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2024-02-27 04:46:04 --> ErrorException: Uncaught ErrorException: Undefined array key "htpp" in C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\URI.php:371
+Stack trace:
+#0 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\URI.php(371): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampppp\\htdo...', 371)
+#1 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\URI.php(635): CodeIgniter\HTTP\URI->getAuthority()
+#2 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(111): CodeIgniter\HTTP\URI->__toString()
+#3 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), '/', NULL)
+#4 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath('/')
+#5 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(799): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#6 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri(NULL, false)
+#7 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#8 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(792): CodeIgniter\Config\BaseService::getSharedInstance('uri', NULL)
+#9 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::uri()
+#10 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(566): CodeIgniter\Config\BaseService::__callStatic('uri', Array)
+#11 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#12 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(524): CodeIgniter\Config\BaseService::__callStatic('incomingrequest', Array)
+#13 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request(NULL, false)
+#14 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#15 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance('request', NULL)
+#16 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::request()
+#17 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Debug\Exceptions.php(150): CodeIgniter\Config\BaseService::__callStatic('request', Array)
+#18 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#19 {main}
+  thrown
+【Previous Exception】
+ErrorException
+Undefined array key "htpp"
+#0 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\URI.php(371): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampppp\\htdo...', 371)
+#1 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\URI.php(635): CodeIgniter\HTTP\URI->getAuthority()
+#2 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\SiteURI.php(111): CodeIgniter\HTTP\URI->__toString()
+#3 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\HTTP\CLIRequest.php(78): CodeIgniter\HTTP\SiteURI->__construct(Object(Config\App), 'serve')
+#4 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(144): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+#5 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+#6 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#7 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(139): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+#8 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+#9 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\Services.php(537): CodeIgniter\Config\BaseService::__callStatic('clirequest', Array)
+#10 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\Config\BaseService.php(258): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+#11 C:\xampppp\htdocs\appKasir\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\Config\BaseService::__callStatic('createRequest', Array)
+#12 C:\xampppp\htdocs\appKasir\spark(102): CodeIgniter\CLI\Console->run()
+#13 {main}
+in SYSTEMPATH\HTTP\URI.php on line 371.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
